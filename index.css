@@ -1,0 +1,79 @@
+h1,h2{
+  background:#F0F0F0;
+  color: #A4A400;
+  font-family: Lucida Sans Unicode, Helvetica, Arial;
+  text-decoration: underline;
+  font-size: 22pt bold;
+  letter-spacing: 0.25em;
+  text-align: center;
+}
+h2{
+  text-align: left;
+  font-size: 18pt normal;
+}
+body{
+  color:#404040;
+  background: white;
+  background-image: url("silverware.jpg"); 
+  font-family: Georgia, Garamond;
+  font-size: 11pt;
+}
+a{
+  color:#A4A400;
+}
+.tooltip{
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext{
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.tooltip .tooltiptext::after{
+  content:"";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext{
+  visibility: visible;
+  opacity: 1;
+}
+.line-through{
+  text-decoration: line-through;
+}
+#final-words{
+  text-align: right;
+  margin-right: 114em;
+  line-height: 20px;
+}
+.bold{
+  font-weight: bold;
+}
+.comments{
+  background-color: #FFFFA8;
+  font-style: italic;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10px;
+}
+#comment{
+  text-align: center;
+}
